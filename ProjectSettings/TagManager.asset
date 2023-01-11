@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - animals
+  - impactObject
+  - grab
+  - Rocket_HK
+  - Rake_HK
+  - Door_HK
+  - Player_HK
+  - Tractor_HK
+  - Wooden_Create_HK
+  - Node_L_AR
+  - Node_R_AR
+  - Car_AR
+  - coin_AD
+  - WheelBarrow
+  - people
+  - grabbed
+  - InventoryButton
+  - Cornplant_HS
+  - pepperflower_HS
+  - Sunflower_HS
+  - Grapeflower_HS
+  - Cabbageplant_HS
+  - bills
+  - vendi
+  - vendiChar
+  - Glass_Cell_HK
+  - Female_HK
+  - IdleHuman_HK
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - AI
+  - Minimap_AD
+  - Interactable_HK
+  - Pickable_HK
+  - grabMe
+  - Ground
+  - player
+  - PostFx
+  - grabPeople
+  - Cars
+  - CashPick
+  - Buildings
+  - Animals
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
