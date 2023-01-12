@@ -49,6 +49,8 @@ public class ObjectKnockOut_AR : MonoBehaviour
 
     bool ok;
 
+    public ParticleSystem parti;
+
     //[SerializeField]
     //private MeshRenderer carBodyMaterial;
     //[SerializeField]
@@ -120,10 +122,16 @@ public class ObjectKnockOut_AR : MonoBehaviour
 
             //if (!cheems)
             //    return;
-            if (!ok)
-                cheems.RewardPlayer();
-                ok = true;
+          
 
+            if (cheems.IsBonking && !ok && !isHit)
+            {
+                cheems.RewardPlayer();
+
+                Instantiate(parti, transform.position + new Vector3(0f, 2.3f, 0f), Quaternion.identity);
+                ok = true;
+            }
+            
             isHit = true;
 
             //if (!cheems.IsBonking)

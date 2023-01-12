@@ -93,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3738768161122727004}
   - component: {fileID: 7911330270874318330}
-  - component: {fileID: 2600502879662261700}
   - component: {fileID: 5975800148634795529}
   - component: {fileID: 5125064145066407220}
   - component: {fileID: -1610753046915154082}
@@ -135,21 +134,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8055108, y: 1.5685884, z: 2.4323967}
-  m_Center: {x: -0.000024808734, y: 0.8173458, z: -0.44465527}
---- !u!65 &2600502879662261700
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2504136102441105469}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7584819, y: 0.78295726, z: 0.87432754}
-  m_Center: {x: -0.005663418, y: 0.41695037, z: 1.216582}
+  m_Size: {x: 1.8055108, y: 1.5685884, z: 3.3171012}
+  m_Center: {x: -0.000024795532, y: 0.8173458, z: -0.0023030043}
 --- !u!54 &5975800148634795529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -185,6 +171,7 @@ MonoBehaviour:
   hitParticleFX: {fileID: 2059062690690994931, guid: 995f663cfa99d6748afced1eca6cc667, type: 3}
   isHit: 0
   isBlasted: 0
+  parti: {fileID: 1476112781437163632, guid: 4ccd0e34efedfee4eaafae597f8991c3, type: 3}
 --- !u!114 &-1610753046915154082
 MonoBehaviour:
   m_ObjectHideFlags: 0

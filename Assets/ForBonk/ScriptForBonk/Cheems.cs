@@ -250,11 +250,7 @@ public class Cheems : MonoBehaviour
             UpdateMultiplier();
         }
 
-        if(IsBonking)
-        {
-            AudioSource.PlayClipAtPoint(bonkSounds[Random.Range(0, bonkSounds.Length)], transform.position, 2);
-            Instantiate(parti, bat.transform.position + new Vector3(0f, 1.3f, 0f), Quaternion.identity);
-        }
+       
        
 
         UpdateCoins(baseCoinValue);

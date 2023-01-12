@@ -11,7 +11,7 @@ public class SpawnPointForPlayer : MonoBehaviour
 
     void Start()
     {
-        GameObject player1 =  Instantiate(player, spawnPoints[Random.RandomRange(0, 4)].transform.position, Quaternion.identity);
+        GameObject player1 =  Instantiate(player, spawnPoints[Random.Range(0, 4)].transform.position, Quaternion.identity);
         Cinemachine.CinemachineFreeLook gm =   GameManager.instance.cine.GetComponent<Cinemachine.CinemachineFreeLook>();
         gm.Follow = player1.transform;
         gm.LookAt = player1.transform;
