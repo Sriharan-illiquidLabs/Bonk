@@ -5,36 +5,22 @@ using UnityEngine;
 public class Bench_03Break_HK : MonoBehaviour
 {
     public GameObject _Bench03_Obj;
-   
 
+    Rigidbody rb;
     void Start()
     {
-        GetBenchBits();
-        foreach (Rigidbody rb in Rigidbodies)
-        {
-            rb.isKinematic = true;
-        }
-
+        rb = GetComponent<Rigidbody>();
+        _Bench03_Obj = GameManager.instance.Bench03_HK;
     }
-    Rigidbody[] Rigidbodies;
-    void GetBenchBits()
-    {
-        Rigidbodies = this.GetComponentsInChildren<Rigidbody>();
-    }
+    //Rigidbody[] Rigidbodies;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            Destroy(gameObject);
             var Dusteffect = Instantiate(GameManager.instance.Bench_DustParticles_HK, transform.position, transform.rotation);
-            foreach (Rigidbody rb in Rigidbodies)
-            {
-                rb.isKinematic = false;
-                rb.mass = 0.01f;
-                var magnitude = 70f;
-                var force = transform.position - collision.transform.position;
-                rb.AddForce(new Vector3(force.x, force.y + 0.8f, force.z) * magnitude);
-            }
-            Destroy(_Bench03_Obj,3.5f);
+            var replacement = Instantiate(_Bench03_Obj, transform.position, transform.rotation);
+            Destroy(replacement,2.5f);
         }
     }
 }
