@@ -485,6 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4263840846038277490}
   - component: {fileID: 9186612375425352020}
+  - component: {fileID: 3511426729973574181}
   - component: {fileID: 2750027616594678953}
   - component: {fileID: 2750027616594678952}
   - component: {fileID: 5434769940710284559}
@@ -527,8 +528,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.75946, y: 1.5499525, z: 3.976012}
-  m_Center: {x: 0.00000017881393, y: 0.86421084, z: 0.30953968}
+  m_Size: {x: 1.75946, y: 1.5499525, z: 2.447276}
+  m_Center: {x: 0.00000016804421, y: 0.86421084, z: -0.45482853}
+--- !u!65 &3511426729973574181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900758161704893531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7619622, y: 0.72061884, z: 1.4698633}
+  m_Center: {x: -0.012688042, y: 0.44446993, z: 1.5048401}
 --- !u!54 &2750027616594678953
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -564,7 +578,6 @@ MonoBehaviour:
   hitParticleFX: {fileID: 2059062690690994931, guid: 995f663cfa99d6748afced1eca6cc667, type: 3}
   isHit: 0
   isBlasted: 0
-  parti: {fileID: 1476112781437163632, guid: 4ccd0e34efedfee4eaafae597f8991c3, type: 3}
 --- !u!82 &5434769940710284559
 AudioSource:
   m_ObjectHideFlags: 0
