@@ -49,7 +49,7 @@ public class UIManager_AR : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isGameMenu)
+        if (Input.GetKeyDown(KeyCode.P) && isGameMenu)
         {
             //Play
             if (isPaused == true)
@@ -59,16 +59,24 @@ public class UIManager_AR : MonoBehaviour
             //Pause
             else
             {
-                Time.timeScale = 0.0f;
-                pauseCanvas?.gameObject.SetActive(true);
-                pauseCanvasAnimator?.Play(AnimateInName);
-                isPaused = true;
+                Pause();
             }
         }
     }
     //Resume
+    public void Pause()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0.0f;
+        pauseCanvas?.gameObject.SetActive(true);
+        pauseCanvasAnimator?.Play(AnimateInName);
+        isPaused = true;
+    }
     public void Resume()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseCanvasAnimator?.Play(AnimateOutName);
 
     }
