@@ -20,6 +20,9 @@ public class AnimalRagdollToggle_AD : MonoBehaviour
 
     [SerializeField]
     public bool hit;
+    bool ok;
+
+    public ParticleSystem parti;
     //these run before the onEnable method
     private void Awake()
     {
@@ -72,10 +75,13 @@ public class AnimalRagdollToggle_AD : MonoBehaviour
         {
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
 
-            if (!cheems || !cheems.IsBonking)
-                return;
+            if (cheems.IsBonking && !ok && !hit)
+            {
+                cheems.RewardPlayer();
 
-            cheems.RewardPlayer();
+                Instantiate(parti, transform.position + new Vector3(0f, 2.5f, 0f), Quaternion.identity);
+                ok = true;
+            }
 
             foreach (Rigidbody ragdollrb in ragdollRigidBodies)
             {

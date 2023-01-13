@@ -70,6 +70,7 @@ MonoBehaviour:
   walkSound: {fileID: -8552792619728025920}
   impactForce: 1500
   hit: 0
+  parti: {fileID: 1476112781437163632, guid: 4ccd0e34efedfee4eaafae597f8991c3, type: 3}
 --- !u!65 &3133071509547833816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -343,7 +344,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!95 &1514613368769093184
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -360,7 +361,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1464136722699636637
 GameObject:
   m_ObjectHideFlags: 0

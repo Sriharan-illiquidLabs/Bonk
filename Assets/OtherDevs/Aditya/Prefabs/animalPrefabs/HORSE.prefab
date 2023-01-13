@@ -36,7 +36,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -1.734, y: 90, z: 1.415}
 --- !u!95 &1418779367187037932
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53,7 +53,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &4796147565399618933
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   walkSound: {fileID: 8799269521236862620}
   impactForce: 1500
   hit: 0
+  parti: {fileID: 1476112781437163632, guid: 4ccd0e34efedfee4eaafae597f8991c3, type: 3}
 --- !u!65 &8799269521236862622
 BoxCollider:
   m_ObjectHideFlags: 0

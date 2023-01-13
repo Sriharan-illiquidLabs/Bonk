@@ -128,7 +128,7 @@ public class ObjectKnockOut_AR : MonoBehaviour
             {
                 cheems.RewardPlayer();
 
-                Instantiate(parti, transform.position + new Vector3(0f, 2.3f, 0f), Quaternion.identity);
+                Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
                 ok = true;
             }
             

@@ -47,6 +47,7 @@ public class ObjectKnockOut_HS : MonoBehaviour
     private bool isPathBlocked = false;
     public bool IsPathBlocked { get { return isPathBlocked; } }
 
+    public ParticleSystem parti;
 
     bool ok;
     //[SerializeField]
@@ -125,10 +126,13 @@ public class ObjectKnockOut_HS : MonoBehaviour
         {
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
 
-            if (!ok)
+            if (cheems.IsBonking && !ok && !isHit)
+            {
                 cheems.RewardPlayer();
-                ok = true;
 
+                Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
+                ok = true;
+            }
             isHit = true;
 
             //if (!cheems)
@@ -153,14 +157,17 @@ public class ObjectKnockOut_HS : MonoBehaviour
         {
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
 
-            if (!cheems)
-                return;
+            //if (!cheems)
+            //    return;
 
-            if (!cheems.IsBonking)
-            {
-                Invoke(nameof(RestartVehicle), 1f);
-                return;
-            }
+            //if (!cheems.IsBonking)
+            //{
+            //    Invoke(nameof(RestartVehicle), 1f);
+            //    return;
+            //}
+
+
+            
         }
         else if (collision.gameObject.CompareTag("impactObject"))
         {
