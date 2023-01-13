@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Ragdoll_controller : MonoBehaviour
 {
-
+    public static Ragdoll_controller Rc_instance;
     private CapsuleCollider maincollider;
     private Animator animator;
     private GameObject Blood_HK;
@@ -17,13 +17,12 @@ public class Ragdoll_controller : MonoBehaviour
     public BezierSpline thisSpline;
     public float thisSpeed;
     public Vector3 pos;
-
-
+    //public bool isDead;
+    //public Spawn_Properties sp;
     // Start is called before the first frame update
     private void Awake()
     {
-        
-
+        Rc_instance= this;  
     }
     void Start()
     {       
@@ -50,10 +49,15 @@ public class Ragdoll_controller : MonoBehaviour
     {
         if (isGoathit == true)
         {
-            GameManager.instance.rp.GetComponent<Respawning>().instantiatepos = pos;
-            GameManager.instance.rp.humanprefabNormalT = GetComponent<BezierWalkerWithSpeed>().NormalizedT;
-            GameManager.instance.rp.humaprefabSpline = thisSpline;
-            GameManager.instance.rp.humanprefabSpeed = thisSpeed;
+           if(Spawn_Properties.Sp_Instance.canbeSpawned = true)
+            {
+                GameManager.instance.rp.GetComponent<Respawning>().Instantiatepeople();
+            }
+            //GameManager.instance.rp.GetComponent<Respawning>().Invoke("Instantiatepeople", 2.25f);
+            //GameManager.instance.rp.GetComponent<Respawning>().instantiatepos = pos;
+            //GameManager.instance.rp.humanprefabNormalT = GetComponent<BezierWalkerWithSpeed>().NormalizedT;
+            //GameManager.instance.rp.humaprefabSpline = thisSpline;
+            //GameManager.instance.rp.humanprefabSpeed = thisSpeed;
             isGoathit = false;
         }
     }
@@ -93,8 +97,8 @@ public class Ragdoll_controller : MonoBehaviour
             {
                 ragDollOn();
                
-                GameManager.instance.rp.GetComponent<Respawning>().Invoke("Instantiatepeople", 2.25f);
-                GameManager.instance.rp.humanprefabNormalT = gameObject.GetComponent<BezierWalkerWithSpeed>().NormalizedT;
+                
+                //GameManager.instance.rp.humanprefabNormalT = gameObject.GetComponent<BezierWalkerWithSpeed>().NormalizedT;
                 Destroy(gameObject, 5f);
             
                 if(gameObject.tag == "IdleHuman_HK")
