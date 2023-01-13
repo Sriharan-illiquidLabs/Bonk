@@ -7,6 +7,8 @@ public class Cheems : MonoBehaviour
 {
 
     public Transform cam;
+    public float speed = 4.0f;
+    public float sprintspeed = 8.5f;
     public float playerSpeed;
     public float playerSideways;
     public float rotationSpeed;
@@ -119,12 +121,12 @@ public class Cheems : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.LeftShift) && vertical > 0f /*&& horizontal == 0f*/)
                 {
-                    playerSpeed = 8.5f;
+                    playerSpeed = sprintspeed;
                     SetState(State.Run);
                 }
                 else
                 {
-                    playerSpeed = 4f;
+                    playerSpeed = speed;
                     SetState(State.Walk);
                 }
                 transform.position += transform.forward * vertical * playerSpeed * Time.deltaTime;
