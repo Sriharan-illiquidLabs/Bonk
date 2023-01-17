@@ -12,9 +12,11 @@ public class SpawnPlayer_AR : MonoBehaviour
     public TextMeshProUGUI multiplierUI;
 
     public GameObject current;
+    
     bool dog;
-
     bool ok;
+
+    public int currentInt;
     void Start()
     {
        
@@ -38,6 +40,9 @@ public class SpawnPlayer_AR : MonoBehaviour
 
     void GameStart(int i)
     {
+        if (i == currentInt)
+            return;
+        Destroy(current);
         GameObject player1 = Instantiate(player[i], spawnPoints[Random.RandomRange(0, 4)].transform.position, Quaternion.identity);
         current = player1;
         Cinemachine.CinemachineFreeLook gm = GameManager.instance.cine.GetComponent<Cinemachine.CinemachineFreeLook>();
@@ -46,6 +51,7 @@ public class SpawnPlayer_AR : MonoBehaviour
         player1.GetComponent<Cheems>().coinCount = coinUI;
         player1.GetComponent<Cheems>().multiplierText = multiplierUI;
         ok = true;
+        currentInt = i;
         LeanTween.delayedCall(10f, Restart);
     }
 
