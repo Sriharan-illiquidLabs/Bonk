@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject Brokencornplant_HS;
     public GameObject brokencabbageplant_HS;
     public Respawning rp;
+    public Ragdoll_controller rc;
+    public Spawn_Properties sp;
 
     public GameObject cine;
     public TMP_Text coinCount;
