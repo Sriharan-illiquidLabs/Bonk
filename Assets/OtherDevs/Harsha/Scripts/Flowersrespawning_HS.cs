@@ -8,7 +8,6 @@ public class Flowersrespawning_HS: MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("hit");
         if (collision.gameObject.tag == "Player")
         {
             gameObject.SetActive(false);
