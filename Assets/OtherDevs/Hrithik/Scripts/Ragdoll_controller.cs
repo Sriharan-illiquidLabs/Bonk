@@ -49,15 +49,11 @@ public class Ragdoll_controller : MonoBehaviour
     {
         if (isGoathit == true)
         {
-           if(Spawn_Properties.Sp_Instance.canbeSpawned = true)
+           if(Spawn_Properties.Sp_Instance.canbeSpawned)
             {
                 GameManager.instance.rp.GetComponent<Respawning>().Instantiatepeople();
             }
-            //GameManager.instance.rp.GetComponent<Respawning>().Invoke("Instantiatepeople", 2.25f);
-            //GameManager.instance.rp.GetComponent<Respawning>().instantiatepos = pos;
-            //GameManager.instance.rp.humanprefabNormalT = GetComponent<BezierWalkerWithSpeed>().NormalizedT;
-            //GameManager.instance.rp.humaprefabSpline = thisSpline;
-            //GameManager.instance.rp.humanprefabSpeed = thisSpeed;
+
             isGoathit = false;
         }
     }
@@ -65,6 +61,7 @@ public class Ragdoll_controller : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" /*&& Input.GetKey(KeyCode.LeftShift)*/)
         {
+            Vector3 collisionPoint = collision.contacts[0].point;
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
 
             if (!cheems || !cheems.IsBonking)
@@ -88,7 +85,7 @@ public class Ragdoll_controller : MonoBehaviour
 
          
             GetComponent<Rigidbody>().isKinematic = false;
-            var replacement = Instantiate(Blood_HK, transform.position,
+            var replacement = Instantiate(Blood_HK, collisionPoint,
                    transform.rotation);
 
             Destroy(replacement,5.0f);
@@ -108,10 +105,6 @@ public class Ragdoll_controller : MonoBehaviour
           
             }     
             
-            //if(collision.gameObject.tag == "Player" && gameObject.tag == "IdleHuman_HK")
-            //{
-            //    ragDollOn();
-            //}
 
             AddRigidBodyForce(collision.transform , 70);
         }
