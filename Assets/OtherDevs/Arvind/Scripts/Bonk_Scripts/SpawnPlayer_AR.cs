@@ -16,25 +16,27 @@ public class SpawnPlayer_AR : MonoBehaviour
     bool dog;
     bool ok;
 
-    public int currentInt;
+    int currentInt = -1;
     void Start()
     {
-       
+        GameStart(0);
     }
+
+
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1 ) && !ok)
-        {
-            GameStart(0);
+        //if(Input.GetKeyDown(KeyCode.Alpha1 ) && !ok)
+        //{
+        //    GameStart(0);
                
-        }
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && !ok)
-        {
-            GameStart(1);
+        //if (Input.GetKeyDown(KeyCode.Alpha2) && !ok)
+        //{
+        //    GameStart(1);
            
-        }
+        //}
 
     }
 
@@ -42,6 +44,8 @@ public class SpawnPlayer_AR : MonoBehaviour
     {
         if (i == currentInt)
             return;
+        print("start");
+
         Destroy(current);
         GameObject player1 = Instantiate(player[i], spawnPoints[Random.RandomRange(0, 4)].transform.position, Quaternion.identity);
         current = player1;
