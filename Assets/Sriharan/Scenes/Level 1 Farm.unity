@@ -18155,6 +18155,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: player.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: player.Array.data[0]
+      value: 
+      objectReference: {fileID: 8583218860491919279, guid: a2e5fadbe5c276d4c90deef2196d6f76, type: 3}
+    - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: player.Array.data[1]
+      value: 
+      objectReference: {fileID: 3418483488798390323, guid: c67a13154640c8f4b8eaf15d77f0fd2a, type: 3}
+    - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 6918466938028367680}
@@ -18174,6 +18186,10 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[4]
       value: 
       objectReference: {fileID: 6918466938028367676}
+    - target: {fileID: 5258598517897639330, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
 --- !u!1 &1018600653
