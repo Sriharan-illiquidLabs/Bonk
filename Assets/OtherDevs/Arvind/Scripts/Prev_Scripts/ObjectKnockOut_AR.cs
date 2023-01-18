@@ -130,9 +130,10 @@ public class ObjectKnockOut_AR : MonoBehaviour
 
                 Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
                 ok = true;
+                isHit = true;
+
             }
-            
-            isHit = true;
+
 
             //if (!cheems.IsBonking)
             //{

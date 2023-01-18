@@ -159,6 +159,8 @@ public class Cheems : MonoBehaviour
         if (input == Vector3.zero && !jump && !bonk)
         {
             SetState(State.Idle);
+            anim.SetFloat(xVelHash, 0);
+            anim.SetFloat(yVelHash, 0);
         }
     }
 
