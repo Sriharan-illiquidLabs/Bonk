@@ -132,8 +132,9 @@ public class ObjectKnockOut_HS : MonoBehaviour
 
                 Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
                 ok = true;
+                isHit = true;
             }
-            isHit = true;
+            
 
             //if (!cheems)
             //    return;
