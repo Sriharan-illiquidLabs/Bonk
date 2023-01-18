@@ -501,9 +501,10 @@ GameObject:
   - component: {fileID: 5801521815351597257}
   - component: {fileID: 5980599662007193000}
   - component: {fileID: 7183939455459687530}
+  - component: {fileID: 1600248726432700046}
   m_Layer: 0
   m_Name: Cube.001
-  m_TagString: Untagged
+  m_TagString: Car_AR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,6 +574,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1600248726432700046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747045013566796136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021344945, y: 0.07108134, z: 0.021586407}
+  m_Center: {x: 4.656613e-10, y: -0.012147127, z: 0.00495118}
 --- !u!1 &3844446609003305112
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4879102338623286264
 Transform:
   m_ObjectHideFlags: 0

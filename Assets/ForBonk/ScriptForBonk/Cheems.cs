@@ -7,8 +7,6 @@ public class Cheems : MonoBehaviour
 {
 
     public Transform cam;
-    public float speed = 4.0f;
-    public float sprintspeed = 8.5f;
     public float playerSpeed;
     public float playerSideways;
     public float rotationSpeed;
@@ -96,10 +94,9 @@ public class Cheems : MonoBehaviour
             bonk = true;
             //Bat.tag = "Player";
             SetState(State.bonk);
-            LeanTween.delayedCall(1f, Idle);
+            LeanTween.delayedCall(1.7f, Idle);
 
 
-            // Temp code need to delete later
             anim.SetFloat(xVelHash, 0);
             anim.SetFloat(yVelHash, 0);
         }
@@ -121,12 +118,11 @@ public class Cheems : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.LeftShift) && vertical > 0f /*&& horizontal == 0f*/)
                 {
-                    playerSpeed = sprintspeed;
+                   
                     SetState(State.Run);
                 }
                 else
                 {
-                    playerSpeed = speed;
                     SetState(State.Walk);
                 }
                 transform.position += transform.forward * vertical * playerSpeed * Time.deltaTime;
@@ -290,6 +286,10 @@ public class Cheems : MonoBehaviour
         switch (newState)
         {
             case State.Walk:
+                LeanTween.value(playerSpeed, 4f, 0.3f).setOnUpdate((float val) =>
+                {
+                    playerSpeed = val;
+                });
                 anim.SetTrigger("walk");
                 mg = 400f;
                 break;
@@ -298,6 +298,10 @@ public class Cheems : MonoBehaviour
                 mg = 0f;
                 break;
             case State.Run:
+                LeanTween.value(playerSpeed, 8f, 0.5f).setOnUpdate((float val) =>
+                {
+                    playerSpeed = val;
+                });
                 anim.SetTrigger("run");
                 mg = 400f;
                 break;
@@ -307,6 +311,7 @@ public class Cheems : MonoBehaviour
                 break;
             case State.bonk:
                 anim.SetTrigger("bonk");
+                playerSpeed = 0f;
                 mg = 400f;
                 break;
 
