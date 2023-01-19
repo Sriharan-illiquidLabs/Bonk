@@ -238,7 +238,6 @@ GameObject:
   - component: {fileID: 1639059369773000104}
   - component: {fileID: 412749162138292905}
   - component: {fileID: 952591775005706993}
-  - component: {fileID: 577001433367616465}
   - component: {fileID: -7069169353227910687}
   - component: {fileID: 577001434929802654}
   - component: {fileID: 577001434914670662}
@@ -332,27 +331,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1112099, y: 5.0108323, z: 3.4119635}
   m_Center: {x: 0, y: 3.020654, z: 1.171761}
---- !u!114 &577001433367616465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4929031079464201195}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148310ac13c958d4c93f53cdfe985375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spline: {fileID: 3086742068478297481, guid: d0b6ed88b026d4749acb29c081115b2e, type: 3}
-  travelMode: 2
-  speed: 1
-  m_normalizedT: 0
-  rotationLerpModifier: 5
-  lookAt: 1
-  onPathCompleted:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-7069169353227910687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d8a22d22266a84bb0af050549abac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vechscript: {fileID: 0}
   isThisCar: 1
   burnTimeDivisor: 2
   carMaterials: []
