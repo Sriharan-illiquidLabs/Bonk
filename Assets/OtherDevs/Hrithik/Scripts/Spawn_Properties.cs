@@ -13,11 +13,8 @@ public class Spawn_Properties : MonoBehaviour
     public BezierSpline gj_Spline;
     public float gj_normalT;
     public bool isDead;
-    //public Transform gj_pos;
-    //public bool isClear = false;
     public bool canbeSpawned;
-    //private Ragdoll_controller rg_controller;
-    // Start is called before the first frame update
+    public Respawning rp;
 
     private void Awake()
     {
@@ -43,10 +40,6 @@ public class Spawn_Properties : MonoBehaviour
         }
       
     }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, look_radius);
-    }
+  
    
 }

@@ -5,14 +5,13 @@ using UnityEngine;
 public class FireHydrant_HK : MonoBehaviour
 {
 
-    private GameObject _Water_Obj;
+    public GameObject _Water_Obj;
     private bool isflowing;
     //[SerializeField] private GameObject _Pumpkin_Particles;
     void Start()
     {
         isflowing = false;
-        _Water_Obj = GameManager.instance.water_Particles_HK;
-        //_Pumpkin_Particles = GameManager.instance.Pumpkin_Particles_HK;
+ 
     }
     public void OnCollisionEnter(Collision collision)
     {

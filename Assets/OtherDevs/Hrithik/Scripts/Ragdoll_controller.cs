@@ -7,30 +7,38 @@ using UnityEngine;
 
 public class Ragdoll_controller : MonoBehaviour
 {
-    public static Ragdoll_controller Rc_instance;
+   
     private CapsuleCollider maincollider;
     private Animator animator;
     private GameObject Blood_HK;
+    public GameObject Male_Blood_HK;
+    public GameObject Female_Blood_HK;
     BezierWalkerWithSpeed bezi;
     public bool isGoathit;
     public float DefaultStaringPoint;
     public BezierSpline thisSpline;
     public float thisSpeed;
     public Vector3 pos;
-    //public bool isDead;
-    //public Spawn_Properties sp;
-    // Start is called before the first frame update
+    public Respawning rsp;
     private void Awake()
     {
-        Rc_instance= this;  
+       
     }
     void Start()
-    {       
+    {
+      if(rsp == null)
+        {
+            //print("Desto");
+            rsp = GetComponentInParent<Respawning>();
+        }
+
+
+
         maincollider = GetComponent<CapsuleCollider>();
         animator = GetComponent<Animator>();
         GetragDollBits();
         ragDollOff();
-        Blood_HK = GameManager.instance.BloodParticles_HK;
+        Blood_HK = Male_Blood_HK;
         bezi = gameObject.GetComponent<BezierWalkerWithSpeed>();
 
         if (gameObject.tag != "IdleHuman_HK" && gameObject.tag != "vendiChar")
@@ -45,21 +53,9 @@ public class Ragdoll_controller : MonoBehaviour
         }
 
     }
-    public void Update()
-    {
-        if (isGoathit == true)
-        {
-           if(Spawn_Properties.Sp_Instance.canbeSpawned)
-            {
-                GameManager.instance.rp.GetComponent<Respawning>().Instantiatepeople();
-            }
-
-            isGoathit = false;
-        }
-    }
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.tag == "Player" /*&& Input.GetKey(KeyCode.LeftShift)*/)
+        if (collision.gameObject.tag == "Player")
         {
             Vector3 collisionPoint = collision.contacts[0].point;
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
@@ -74,7 +70,7 @@ public class Ragdoll_controller : MonoBehaviour
 
             if(gameObject.tag == "Female_HK")
             {
-                Blood_HK = GameManager.instance.BloodParticlesFemale_HK;
+                Blood_HK = Female_Blood_HK;
             }
 
             if(gameObject.tag == "IdleHuman_HK" && bezi == null)
@@ -82,7 +78,6 @@ public class Ragdoll_controller : MonoBehaviour
                 ragDollOn();
                 isGoathit=false;
             }
-
          
             GetComponent<Rigidbody>().isKinematic = false;
             var replacement = Instantiate(Blood_HK, collisionPoint,
@@ -92,10 +87,12 @@ public class Ragdoll_controller : MonoBehaviour
             
             if(isGoathit )
             {
-                ragDollOn();
-               
-                
-                //GameManager.instance.rp.humanprefabNormalT = gameObject.GetComponent<BezierWalkerWithSpeed>().NormalizedT;
+                if (Spawn_Properties.Sp_Instance.canbeSpawned)
+                {
+                    //print("Desto");
+                    rsp.Instantiatepeople();
+                }
+                ragDollOn();                                         
                 Destroy(gameObject, 5f);
             
                 if(gameObject.tag == "IdleHuman_HK")
@@ -104,9 +101,8 @@ public class Ragdoll_controller : MonoBehaviour
                 }
           
             }     
-            
-
-            AddRigidBodyForce(collision.transform , 70);
+          
+            AddRigidBodyForce(collision.transform , 50);
         }
 
     }
@@ -207,11 +203,5 @@ public class Ragdoll_controller : MonoBehaviour
         bezi.NormalizedT = DefaultStaringPoint;
         GetComponent<Rigidbody>().isKinematic = true;
     }
-    public void CleanChildren()
-    {
-        foreach (Transform child in transform)
-        {
-            GameObject.Destroy(child.gameObject);
-        }
-    }
+    
 }
