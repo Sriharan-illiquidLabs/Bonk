@@ -18094,14 +18094,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
-      propertyPath: player.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
-      propertyPath: player.Array.data[0]
-      value: 
-      objectReference: {fileID: 8583218860491919279, guid: a2e5fadbe5c276d4c90deef2196d6f76, type: 3}
-    - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 6918466938028367680}
@@ -19684,7 +19676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112636876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.6, y: 0, z: -21.5}
+  m_LocalPosition: {x: -28.6, y: 0, z: -21.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
