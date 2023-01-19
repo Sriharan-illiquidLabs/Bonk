@@ -18,7 +18,7 @@ public class IdleRagdollController_HK: MonoBehaviour
     {
         GetragDollBits();
         ragDollOff();
-        Blood_HK = GameManager.instance.BloodParticles_HK;
+        //Blood_HK = GameManager.instance.BloodParticles_HK;
     }
     private void OnCollisionEnter(Collision collision)
     {

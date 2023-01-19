@@ -27,7 +27,7 @@ public class Ragdoll_controller_HS : MonoBehaviour
         animator = GetComponent<Animator>();
         GetragDollBits();   
         ragDollOff();
-        Blood_HK = GameManager.instance.BloodParticles_HK;
+        //Blood_HK = GameManager.instance.BloodParticles_HK;
         bezi = GetComponent<BezierWalkerWithSpeed>();
     }
     private void OnCollisionStay(Collision collision)
