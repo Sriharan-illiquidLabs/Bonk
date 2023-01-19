@@ -8,6 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class ObjectKnockOut_HS : MonoBehaviour
 {
+    public vehicles_respawn_HS vechscript;
 
     [Header("Car Parameters")]
     [SerializeField]
@@ -50,20 +51,12 @@ public class ObjectKnockOut_HS : MonoBehaviour
     public ParticleSystem parti;
 
     bool ok;
-    //[SerializeField]
-    //private MeshRenderer carBodyMaterial;
-    //[SerializeField]
-    //private MeshRenderer wheel_1;
-    //[SerializeField]
-    //private MeshRenderer wheel_2;
-    //[SerializeField]
-    //private MeshRenderer wheel_3;
-    //[SerializeField]
-    //private MeshRenderer wheel_4;
-
 
     private void Start()
     {
+
+        vechscript=GetComponentInParent<vehicles_respawn_HS>();
+        
         if (isThisCar)
         {
             carMaterials = GetComponentsInChildren<MeshRenderer>();
@@ -99,17 +92,6 @@ public class ObjectKnockOut_HS : MonoBehaviour
                 }
             }
         }
-            //for(int i = 0; i < carMaterials.Length-1; i++)
-            //{
-            //    carMaterials[i].material.color = burnColor;
-            //}
-
-            //carMaterials[0].material.color = burnColor;
-            //carMaterials[1].material.color = burnColor;
-            //carMaterials[2].material.color = burnColor;
-            //carMaterials[3].material.color = burnColor;
-            //carMaterials[4].material.color = burnColor;
-        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -133,22 +115,8 @@ public class ObjectKnockOut_HS : MonoBehaviour
                 Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
                 ok = true;
                 isHit = true;
-            }
-            
-
-            //if (!cheems)
-            //    return;
-
-
-            //if (!cheems.IsBonking)
-            //{
-            //    isPathBlocked = true;
-            //    return;
-            //}
-            //else
-            //{
-
-            //}
+                vechscript.checkcollision();
+            }       
         }
     }
 
@@ -157,16 +125,6 @@ public class ObjectKnockOut_HS : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
-
-            //if (!cheems)
-            //    return;
-
-            //if (!cheems.IsBonking)
-            //{
-            //    Invoke(nameof(RestartVehicle), 1f);
-            //    return;
-            //}
-
 
             
         }
@@ -182,7 +140,6 @@ public class ObjectKnockOut_HS : MonoBehaviour
         isPathBlocked = false;
     }
 
-    //Function to call for an event taking place only once in its lifetime.
     private void EventFunction()
     {
         //Release Rigidbody Contraints.
