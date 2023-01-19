@@ -526,7 +526,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6170023487364355725, guid: bf1da285f143c104488ce6b8738d0056, type: 3}
+  - {fileID: 2100000, guid: bda366bd6cf6d83489e8416fda3c86ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1122,8 +1122,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0008547918, y: 0.0008547929, z: 0.0015314216}
-  m_Center: {x: -0.000000015028617, y: -0.000000010077489, z: -0.0002121669}
+  m_Size: {x: 0.0018259094, y: 0.0011002949, z: 0.0021269906}
+  m_Center: {x: 0.0000036701242, y: 0.00012274101, z: 0.000085617176}
 --- !u!1 &1823796228179994321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,7 +3773,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 74d3dc98f5731e64dbc019f92dff3549, type: 2}
+  - {fileID: 2100000, guid: bda366bd6cf6d83489e8416fda3c86ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5153,6 +5153,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fd2e0fb005266424fae987ed1528d01e, type: 3}
   parti: {fileID: 1476112781437163632, guid: 4ccd0e34efedfee4eaafae597f8991c3, type: 3}
   anim: {fileID: 1359161189927913941}
+  IsBonking: 0
 --- !u!1 &8625056816107927091
 GameObject:
   m_ObjectHideFlags: 0

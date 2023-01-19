@@ -47,7 +47,7 @@ public class SpawnPlayer_AR : MonoBehaviour
         print("start");
 
         Destroy(current);
-        GameObject player1 = Instantiate(player[i], spawnPoints[3].transform.position, Quaternion.identity);
+        GameObject player1 = Instantiate(player[i], spawnPoints[/*Random.Range(0,4)*/0].transform.position, Quaternion.identity);
         current = player1;
         Cinemachine.CinemachineFreeLook gm = GameManager.instance.cine.GetComponent<Cinemachine.CinemachineFreeLook>();
         gm.Follow = player1.transform;

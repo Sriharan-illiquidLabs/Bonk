@@ -40057,6 +40057,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9204024344992503, guid: 7e855d48caa041b4b835cfe00a883155, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2695488577820464662, guid: 7e855d48caa041b4b835cfe00a883155, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071069912485807152, guid: 7e855d48caa041b4b835cfe00a883155, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7414982092323354552, guid: 7e855d48caa041b4b835cfe00a883155, type: 3}
       propertyPath: m_Name
       value: 'Environment '
@@ -40782,6 +40794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ------Aditya------
       objectReference: {fileID: 0}
+    - target: {fileID: 5875675019916658501, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
 --- !u!114 &5395219875178989273
@@ -41028,6 +41044,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6918466937592424584, guid: e3b1430c37e0b304c83771490372756c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 47.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918466937592424584, guid: e3b1430c37e0b304c83771490372756c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -47.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8946792148474444686, guid: e3b1430c37e0b304c83771490372756c, type: 3}
       propertyPath: m_Name
       value: '------Sriharan------ '

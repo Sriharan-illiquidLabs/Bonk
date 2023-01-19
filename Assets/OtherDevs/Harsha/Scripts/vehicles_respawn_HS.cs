@@ -17,11 +17,11 @@ public class vehicles_respawn_HS : MonoBehaviour
     public ObjectKnockOut_HS objectscript;
 
     public BezierWalkerWithSpeed spline;
-   
-    
+
+
     private void Start()
     {
-        spline=GetComponentInParent<BezierWalkerWithSpeed>();
+        spline = GetComponentInParent<BezierWalkerWithSpeed>();
         respawnvehicles();
     }
 

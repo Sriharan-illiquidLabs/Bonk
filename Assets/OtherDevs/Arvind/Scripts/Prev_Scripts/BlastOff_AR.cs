@@ -24,7 +24,7 @@ public class BlastOff_AR : MonoBehaviour
         {
             collision.gameObject.TryGetComponent<Cheems>(out Cheems cheems);
 
-            if (!cheems || !cheems.IsBonking)
+            if (!cheems.IsBonking)
                 return;
 
             cheems.RewardPlayer();
