@@ -16,6 +16,7 @@ public class MotionController_AR : MonoBehaviour
 
     private void Start()
     {
+        //car_cache = Instantiate(car, transform);
         CreateCar();
     }
     private void LateUpdate()
@@ -45,19 +46,22 @@ public class MotionController_AR : MonoBehaviour
             //Debug.Log("Found Box");
         }
         Destroy(car_cache,0.2f);
+        //Invoke("DisableCar", 0.2f);
         CreateCar();
-       
+
     }
+    //void DisableCar()
+    //{
+    //    car_cache.SetActive(false);
+    //    CreateCar();
+    //}
     private void CreateCar()
     {
         car_cache = Instantiate(car, transform);
+        //car_cache.SetActive(true);
         objectKnock = car_cache.GetComponent<ObjectKnockOut_AR>();
+        //objectKnock.ResetCar();
         isDestroyed = false;
     }
 
-    private void OnDrawGizmos()
-    {
-        //Gizmos.color = Color.red;
-        //Gizmos.DrawWireSphere(car_cache.transform.position, radius);
-    }
 }

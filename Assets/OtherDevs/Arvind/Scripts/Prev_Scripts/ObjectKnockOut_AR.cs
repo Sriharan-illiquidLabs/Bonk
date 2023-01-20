@@ -1,4 +1,5 @@
 using BezierSolution;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -20,7 +21,7 @@ public class ObjectKnockOut_AR : MonoBehaviour
     private MeshRenderer[] carMaterials;
 
     [SerializeField]
-    private Wheels_Coins[] wheels_Coins;
+    private Wheels_Coins_AR[] wheels_Coins;
 
 
     private float burnSlider = 1f;
@@ -68,7 +69,7 @@ public class ObjectKnockOut_AR : MonoBehaviour
         if (isThisCar)
         {
             carMaterials = GetComponentsInChildren<MeshRenderer>();
-            wheels_Coins = GetComponentsInChildren<Wheels_Coins>();
+            wheels_Coins = GetComponentsInChildren<Wheels_Coins_AR>();
             hitAudio = GetComponent<AudioSource>();
         }
         
@@ -129,11 +130,11 @@ public class ObjectKnockOut_AR : MonoBehaviour
                 cheems.RewardPlayer();
 
                 Instantiate(parti, transform.position + new Vector3(0f, 2.7f, 0f), Quaternion.identity);
-                ok = true;
                 isHit = true;
-
+                ok = true;
             }
-
+            
+            
 
             //if (!cheems.IsBonking)
             //{
@@ -183,10 +184,7 @@ public class ObjectKnockOut_AR : MonoBehaviour
         //Functions for car objects.
         if (isThisCar)
         {
-            foreach (Wheels_Coins wheels in wheels_Coins)
-            {
-                wheels.rotationSpeed = 0;
-            }
+            StopWheels();
             //Audio play.
             if (hitAudio != null)
             {
@@ -202,4 +200,58 @@ public class ObjectKnockOut_AR : MonoBehaviour
         //Create Particle.
         Instantiate(hitParticleFX,transform.position,hitParticleFX.transform.rotation);
     }
+
+    public void StopWheels()
+    {
+        for (int i = 0;i<wheels_Coins.Length;i++)
+        {
+            wheels_Coins[i].enabled= false;
+        }
+    }
+    public void StartWheels()
+    {
+        for (int i = 0; i < wheels_Coins.Length; i++)
+        {
+            wheels_Coins[i].enabled = true;
+        }
+    }
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if ((other.CompareTag("Player") || other.CompareTag("Car_AR") && !isHit))
+        {
+            StopWheels();
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if ((other.CompareTag("Player") || other.CompareTag("Car_AR")) && !isHit)
+        {
+            StartWheels();
+        }
+    }
+
+    //public void ResetCar()
+    //{
+    //    isHit = false;
+    //    ok= false;
+
+    //    if (isThisCar)
+    //    {
+    //        StartWheels();
+    //        //Audio play.
+    //        if (hitAudio != null)
+    //        {
+    //            hitAudio.Play();
+    //        }
+    //    }
+    //    foreach (MeshRenderer renderer in carMaterials)
+    //    {
+    //        renderer.material.color = new Color(1,1,1);
+    //    }
+    //    burnSlider = 1f;
+    //    isEventDone = false;
+    //}
 }
