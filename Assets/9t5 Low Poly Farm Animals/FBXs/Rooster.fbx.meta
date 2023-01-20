@@ -1,104 +1,296 @@
 fileFormatVersion: 2
 guid: 5e57aa20feb4d404a8b05c30aae4620f
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: BackBone.1
-    100002: BackBone.2
-    100004: Breast.L
-    100006: Breast.R
-    100008: Chicken
-    100010: Head
-    100012: Head_end
-    100014: Heel.L
-    100016: Heel.L_end
-    100018: Heel.R
-    100020: Heel.R_end
-    100022: Knee.L
-    100024: Knee.R
-    100026: Leg.L
-    100028: Leg.R
-    100030: Neck
-    100032: //RootNode
-    100034: Rooster Skeleton
-    100036: Shin.L
-    100038: Shin.R
-    100040: Tail1
-    100042: Tail2
-    100044: Tail3
-    100046: Tail4
-    100048: Tail4_end
-    100050: Toe.L
-    100052: Toe.L_end
-    100054: Toe.R
-    100056: Toe.R_end
-    100058: UpperLeg.L
-    100060: UpperLeg.R
-    100062: Wind2.L
-    100064: Wind2.R
-    100066: Wing1.L
-    100068: Wing1.R
-    100070: Wing3.L
-    100072: Wing3.L_end
-    100074: Wing3.R
-    100076: Wing3.R_end
-    400000: BackBone.1
-    400002: BackBone.2
-    400004: Breast.L
-    400006: Breast.R
-    400008: Chicken
-    400010: Head
-    400012: Head_end
-    400014: Heel.L
-    400016: Heel.L_end
-    400018: Heel.R
-    400020: Heel.R_end
-    400022: Knee.L
-    400024: Knee.R
-    400026: Leg.L
-    400028: Leg.R
-    400030: Neck
-    400032: //RootNode
-    400034: Rooster Skeleton
-    400036: Shin.L
-    400038: Shin.R
-    400040: Tail1
-    400042: Tail2
-    400044: Tail3
-    400046: Tail4
-    400048: Tail4_end
-    400050: Toe.L
-    400052: Toe.L_end
-    400054: Toe.R
-    400056: Toe.R_end
-    400058: UpperLeg.L
-    400060: UpperLeg.R
-    400062: Wind2.L
-    400064: Wind2.R
-    400066: Wing1.L
-    400068: Wing1.R
-    400070: Wing3.L
-    400072: Wing3.L_end
-    400074: Wing3.R
-    400076: Wing3.R_end
-    2100000: Rooster Skin 1
-    2100002: Rooster Skin 2
-    2100004: Rooster Skin 3
-    2100006: Rooster Head
-    2100008: Rooster Beak
-    2100010: Rooster Feet
-    2100012: Rooster Eyes
-    4300000: Chicken
-    7400000: Idle
-    7400002: Walk
-    7400004: Jump
-    7400006: Sit Down
-    7400008: Sitting
-    7400010: Eat
-    7400012: Eat Loop
-    7400014: Death
-    9500000: //RootNode
-    13700000: Chicken
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: BackBone.1
+  - first:
+      1: 100002
+    second: BackBone.2
+  - first:
+      1: 100004
+    second: Breast.L
+  - first:
+      1: 100006
+    second: Breast.R
+  - first:
+      1: 100008
+    second: Chicken
+  - first:
+      1: 100010
+    second: Head
+  - first:
+      1: 100012
+    second: Head_end
+  - first:
+      1: 100014
+    second: Heel.L
+  - first:
+      1: 100016
+    second: Heel.L_end
+  - first:
+      1: 100018
+    second: Heel.R
+  - first:
+      1: 100020
+    second: Heel.R_end
+  - first:
+      1: 100022
+    second: Knee.L
+  - first:
+      1: 100024
+    second: Knee.R
+  - first:
+      1: 100026
+    second: Leg.L
+  - first:
+      1: 100028
+    second: Leg.R
+  - first:
+      1: 100030
+    second: Neck
+  - first:
+      1: 100032
+    second: //RootNode
+  - first:
+      1: 100034
+    second: Rooster Skeleton
+  - first:
+      1: 100036
+    second: Shin.L
+  - first:
+      1: 100038
+    second: Shin.R
+  - first:
+      1: 100040
+    second: Tail1
+  - first:
+      1: 100042
+    second: Tail2
+  - first:
+      1: 100044
+    second: Tail3
+  - first:
+      1: 100046
+    second: Tail4
+  - first:
+      1: 100048
+    second: Tail4_end
+  - first:
+      1: 100050
+    second: Toe.L
+  - first:
+      1: 100052
+    second: Toe.L_end
+  - first:
+      1: 100054
+    second: Toe.R
+  - first:
+      1: 100056
+    second: Toe.R_end
+  - first:
+      1: 100058
+    second: UpperLeg.L
+  - first:
+      1: 100060
+    second: UpperLeg.R
+  - first:
+      1: 100062
+    second: Wind2.L
+  - first:
+      1: 100064
+    second: Wind2.R
+  - first:
+      1: 100066
+    second: Wing1.L
+  - first:
+      1: 100068
+    second: Wing1.R
+  - first:
+      1: 100070
+    second: Wing3.L
+  - first:
+      1: 100072
+    second: Wing3.L_end
+  - first:
+      1: 100074
+    second: Wing3.R
+  - first:
+      1: 100076
+    second: Wing3.R_end
+  - first:
+      4: 400000
+    second: BackBone.1
+  - first:
+      4: 400002
+    second: BackBone.2
+  - first:
+      4: 400004
+    second: Breast.L
+  - first:
+      4: 400006
+    second: Breast.R
+  - first:
+      4: 400008
+    second: Chicken
+  - first:
+      4: 400010
+    second: Head
+  - first:
+      4: 400012
+    second: Head_end
+  - first:
+      4: 400014
+    second: Heel.L
+  - first:
+      4: 400016
+    second: Heel.L_end
+  - first:
+      4: 400018
+    second: Heel.R
+  - first:
+      4: 400020
+    second: Heel.R_end
+  - first:
+      4: 400022
+    second: Knee.L
+  - first:
+      4: 400024
+    second: Knee.R
+  - first:
+      4: 400026
+    second: Leg.L
+  - first:
+      4: 400028
+    second: Leg.R
+  - first:
+      4: 400030
+    second: Neck
+  - first:
+      4: 400032
+    second: //RootNode
+  - first:
+      4: 400034
+    second: Rooster Skeleton
+  - first:
+      4: 400036
+    second: Shin.L
+  - first:
+      4: 400038
+    second: Shin.R
+  - first:
+      4: 400040
+    second: Tail1
+  - first:
+      4: 400042
+    second: Tail2
+  - first:
+      4: 400044
+    second: Tail3
+  - first:
+      4: 400046
+    second: Tail4
+  - first:
+      4: 400048
+    second: Tail4_end
+  - first:
+      4: 400050
+    second: Toe.L
+  - first:
+      4: 400052
+    second: Toe.L_end
+  - first:
+      4: 400054
+    second: Toe.R
+  - first:
+      4: 400056
+    second: Toe.R_end
+  - first:
+      4: 400058
+    second: UpperLeg.L
+  - first:
+      4: 400060
+    second: UpperLeg.R
+  - first:
+      4: 400062
+    second: Wind2.L
+  - first:
+      4: 400064
+    second: Wind2.R
+  - first:
+      4: 400066
+    second: Wing1.L
+  - first:
+      4: 400068
+    second: Wing1.R
+  - first:
+      4: 400070
+    second: Wing3.L
+  - first:
+      4: 400072
+    second: Wing3.L_end
+  - first:
+      4: 400074
+    second: Wing3.R
+  - first:
+      4: 400076
+    second: Wing3.R_end
+  - first:
+      21: 2100000
+    second: Rooster Skin 1
+  - first:
+      21: 2100002
+    second: Rooster Skin 2
+  - first:
+      21: 2100004
+    second: Rooster Skin 3
+  - first:
+      21: 2100006
+    second: Rooster Head
+  - first:
+      21: 2100008
+    second: Rooster Beak
+  - first:
+      21: 2100010
+    second: Rooster Feet
+  - first:
+      21: 2100012
+    second: Rooster Eyes
+  - first:
+      43: 4300000
+    second: Chicken
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      74: 7400002
+    second: Walk
+  - first:
+      74: 7400004
+    second: Jump
+  - first:
+      74: 7400006
+    second: Sit Down
+  - first:
+      74: 7400008
+    second: Sitting
+  - first:
+      74: 7400010
+    second: Eat
+  - first:
+      74: 7400012
+    second: Eat Loop
+  - first:
+      74: 7400014
+    second: Death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Chicken
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -136,7 +328,7 @@ ModelImporter:
       name: Rooster Skin 3
     second: {fileID: 2100000, guid: b5d33842739201a4ca22c09d93b62604, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -145,6 +337,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -165,6 +358,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle
       takeName: Idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -193,6 +387,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Walk
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -221,6 +416,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Jump
       takeName: Jump
+      internalID: 0
       firstFrame: 0
       lastFrame: 25
       wrapMode: 0
@@ -249,6 +445,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Sit Down
       takeName: Sit Down
+      internalID: 0
       firstFrame: 0
       lastFrame: 20
       wrapMode: 0
@@ -277,6 +474,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Sitting
       takeName: Sitting
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -305,6 +503,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat
       takeName: Eat
+      internalID: 0
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -333,6 +532,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat Loop
       takeName: Eat Loop
+      internalID: 0
       firstFrame: 0
       lastFrame: 28
       wrapMode: 0
@@ -361,6 +561,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Death
       takeName: Death
+      internalID: 0
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
@@ -390,36 +591,49 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
+    tangentImportMode: 2
+    normalCalculationMode: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -429,13 +643,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

@@ -1,114 +1,326 @@
 fileFormatVersion: 2
 guid: af1e42c0213935549bcef7e5f3a08367
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Ear.L
-    100002: Ear.L.001
-    100004: Ear.L.001_end
-    100006: Ear.R
-    100008: Ear.R.001
-    100010: Ear.R.001_end
-    100012: FrontFoot.L
-    100014: FrontFoot.L_end
-    100016: FrontFoot.R
-    100018: FrontFoot.R_end
-    100020: FrontHip.L
-    100022: FrontHip.R
-    100024: FrontKnee.L
-    100026: FrontKnee.R
-    100028: FrontLeg.L
-    100030: FrontLeg.R
-    100032: FrontShin.L
-    100034: FrontShin.R
-    100036: Head
-    100038: Neck
-    100040: Neck.001
-    100042: Neck.002
-    100044: Neck.003
-    100046: Nose
-    100048: Nose_end
-    100050: //RootNode
-    100052: Pig
-    100054: Pig Skeleton
-    100056: RearFoot.L
-    100058: RearFoot.L_end
-    100060: RearFoot.R
-    100062: RearFoot.R_end
-    100064: RearHip.L
-    100066: RearHip.R
-    100068: RearKnee.L
-    100070: RearKnee.R
-    100072: RearLeg.L
-    100074: RearLeg.R
-    100076: RearShin.L
-    100078: RearShin.R
-    100080: Spine 1
-    100082: Spine 2
-    100084: Spine 3
-    100086: Spine 4
-    100088: Spine 5
-    100090: Spine 5_end
-    400000: Ear.L
-    400002: Ear.L.001
-    400004: Ear.L.001_end
-    400006: Ear.R
-    400008: Ear.R.001
-    400010: Ear.R.001_end
-    400012: FrontFoot.L
-    400014: FrontFoot.L_end
-    400016: FrontFoot.R
-    400018: FrontFoot.R_end
-    400020: FrontHip.L
-    400022: FrontHip.R
-    400024: FrontKnee.L
-    400026: FrontKnee.R
-    400028: FrontLeg.L
-    400030: FrontLeg.R
-    400032: FrontShin.L
-    400034: FrontShin.R
-    400036: Head
-    400038: Neck
-    400040: Neck.001
-    400042: Neck.002
-    400044: Neck.003
-    400046: Nose
-    400048: Nose_end
-    400050: Pig
-    400052: //RootNode
-    400054: Pig Skeleton
-    400056: RearFoot.L
-    400058: RearFoot.L_end
-    400060: RearFoot.R
-    400062: RearFoot.R_end
-    400064: RearHip.L
-    400066: RearHip.R
-    400068: RearKnee.L
-    400070: RearKnee.R
-    400072: RearLeg.L
-    400074: RearLeg.R
-    400076: RearShin.L
-    400078: RearShin.R
-    400080: Spine 1
-    400082: Spine 2
-    400084: Spine 3
-    400086: Spine 4
-    400088: Spine 5
-    400090: Spine 5_end
-    2100000: Pig Skin
-    2100002: Pig Hooves
-    2100004: Pig Nostrils
-    2100006: Pig Eyes
-    2100008: Pig Ears
-    4300000: Pig
-    7400000: Idle
-    7400002: Walk
-    7400004: Run
-    7400006: Eat
-    7400008: Eat Loop
-    7400010: Death
-    9500000: //RootNode
-    13700000: Pig
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ear.L
+  - first:
+      1: 100002
+    second: Ear.L.001
+  - first:
+      1: 100004
+    second: Ear.L.001_end
+  - first:
+      1: 100006
+    second: Ear.R
+  - first:
+      1: 100008
+    second: Ear.R.001
+  - first:
+      1: 100010
+    second: Ear.R.001_end
+  - first:
+      1: 100012
+    second: FrontFoot.L
+  - first:
+      1: 100014
+    second: FrontFoot.L_end
+  - first:
+      1: 100016
+    second: FrontFoot.R
+  - first:
+      1: 100018
+    second: FrontFoot.R_end
+  - first:
+      1: 100020
+    second: FrontHip.L
+  - first:
+      1: 100022
+    second: FrontHip.R
+  - first:
+      1: 100024
+    second: FrontKnee.L
+  - first:
+      1: 100026
+    second: FrontKnee.R
+  - first:
+      1: 100028
+    second: FrontLeg.L
+  - first:
+      1: 100030
+    second: FrontLeg.R
+  - first:
+      1: 100032
+    second: FrontShin.L
+  - first:
+      1: 100034
+    second: FrontShin.R
+  - first:
+      1: 100036
+    second: Head
+  - first:
+      1: 100038
+    second: Neck
+  - first:
+      1: 100040
+    second: Neck.001
+  - first:
+      1: 100042
+    second: Neck.002
+  - first:
+      1: 100044
+    second: Neck.003
+  - first:
+      1: 100046
+    second: Nose
+  - first:
+      1: 100048
+    second: Nose_end
+  - first:
+      1: 100050
+    second: //RootNode
+  - first:
+      1: 100052
+    second: Pig
+  - first:
+      1: 100054
+    second: Pig Skeleton
+  - first:
+      1: 100056
+    second: RearFoot.L
+  - first:
+      1: 100058
+    second: RearFoot.L_end
+  - first:
+      1: 100060
+    second: RearFoot.R
+  - first:
+      1: 100062
+    second: RearFoot.R_end
+  - first:
+      1: 100064
+    second: RearHip.L
+  - first:
+      1: 100066
+    second: RearHip.R
+  - first:
+      1: 100068
+    second: RearKnee.L
+  - first:
+      1: 100070
+    second: RearKnee.R
+  - first:
+      1: 100072
+    second: RearLeg.L
+  - first:
+      1: 100074
+    second: RearLeg.R
+  - first:
+      1: 100076
+    second: RearShin.L
+  - first:
+      1: 100078
+    second: RearShin.R
+  - first:
+      1: 100080
+    second: Spine 1
+  - first:
+      1: 100082
+    second: Spine 2
+  - first:
+      1: 100084
+    second: Spine 3
+  - first:
+      1: 100086
+    second: Spine 4
+  - first:
+      1: 100088
+    second: Spine 5
+  - first:
+      1: 100090
+    second: Spine 5_end
+  - first:
+      4: 400000
+    second: Ear.L
+  - first:
+      4: 400002
+    second: Ear.L.001
+  - first:
+      4: 400004
+    second: Ear.L.001_end
+  - first:
+      4: 400006
+    second: Ear.R
+  - first:
+      4: 400008
+    second: Ear.R.001
+  - first:
+      4: 400010
+    second: Ear.R.001_end
+  - first:
+      4: 400012
+    second: FrontFoot.L
+  - first:
+      4: 400014
+    second: FrontFoot.L_end
+  - first:
+      4: 400016
+    second: FrontFoot.R
+  - first:
+      4: 400018
+    second: FrontFoot.R_end
+  - first:
+      4: 400020
+    second: FrontHip.L
+  - first:
+      4: 400022
+    second: FrontHip.R
+  - first:
+      4: 400024
+    second: FrontKnee.L
+  - first:
+      4: 400026
+    second: FrontKnee.R
+  - first:
+      4: 400028
+    second: FrontLeg.L
+  - first:
+      4: 400030
+    second: FrontLeg.R
+  - first:
+      4: 400032
+    second: FrontShin.L
+  - first:
+      4: 400034
+    second: FrontShin.R
+  - first:
+      4: 400036
+    second: Head
+  - first:
+      4: 400038
+    second: Neck
+  - first:
+      4: 400040
+    second: Neck.001
+  - first:
+      4: 400042
+    second: Neck.002
+  - first:
+      4: 400044
+    second: Neck.003
+  - first:
+      4: 400046
+    second: Nose
+  - first:
+      4: 400048
+    second: Nose_end
+  - first:
+      4: 400050
+    second: Pig
+  - first:
+      4: 400052
+    second: //RootNode
+  - first:
+      4: 400054
+    second: Pig Skeleton
+  - first:
+      4: 400056
+    second: RearFoot.L
+  - first:
+      4: 400058
+    second: RearFoot.L_end
+  - first:
+      4: 400060
+    second: RearFoot.R
+  - first:
+      4: 400062
+    second: RearFoot.R_end
+  - first:
+      4: 400064
+    second: RearHip.L
+  - first:
+      4: 400066
+    second: RearHip.R
+  - first:
+      4: 400068
+    second: RearKnee.L
+  - first:
+      4: 400070
+    second: RearKnee.R
+  - first:
+      4: 400072
+    second: RearLeg.L
+  - first:
+      4: 400074
+    second: RearLeg.R
+  - first:
+      4: 400076
+    second: RearShin.L
+  - first:
+      4: 400078
+    second: RearShin.R
+  - first:
+      4: 400080
+    second: Spine 1
+  - first:
+      4: 400082
+    second: Spine 2
+  - first:
+      4: 400084
+    second: Spine 3
+  - first:
+      4: 400086
+    second: Spine 4
+  - first:
+      4: 400088
+    second: Spine 5
+  - first:
+      4: 400090
+    second: Spine 5_end
+  - first:
+      21: 2100000
+    second: Pig Skin
+  - first:
+      21: 2100002
+    second: Pig Hooves
+  - first:
+      21: 2100004
+    second: Pig Nostrils
+  - first:
+      21: 2100006
+    second: Pig Eyes
+  - first:
+      21: 2100008
+    second: Pig Ears
+  - first:
+      43: 4300000
+    second: Pig
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      74: 7400002
+    second: Walk
+  - first:
+      74: 7400004
+    second: Run
+  - first:
+      74: 7400006
+    second: Eat
+  - first:
+      74: 7400008
+    second: Eat Loop
+  - first:
+      74: 7400010
+    second: Death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Pig
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -136,7 +348,7 @@ ModelImporter:
       name: Pig Skin
     second: {fileID: 2100000, guid: 1cbf57d8a1757ee4699298b95228f5f2, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -145,6 +357,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -165,6 +378,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle
       takeName: Idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -193,6 +407,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Walk
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -221,6 +436,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Run
       takeName: Run
+      internalID: 0
       firstFrame: 0
       lastFrame: 40
       wrapMode: 0
@@ -249,6 +465,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat
       takeName: Eat
+      internalID: 0
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -277,6 +494,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat Loop
       takeName: Eat Loop
+      internalID: 0
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -305,6 +523,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Death
       takeName: Death
+      internalID: 0
       firstFrame: 0
       lastFrame: 25
       wrapMode: 0
@@ -334,36 +553,49 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
+    tangentImportMode: 2
+    normalCalculationMode: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -373,13 +605,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

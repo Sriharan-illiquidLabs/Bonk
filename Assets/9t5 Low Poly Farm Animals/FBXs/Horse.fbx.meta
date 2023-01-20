@@ -1,125 +1,359 @@
 fileFormatVersion: 2
 guid: 48bd1476e9eeec94c943e7c87888d5d9
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Ear1.L
-    100002: Ear1.R
-    100004: Ear2.L
-    100006: Ear2.L_end
-    100008: Ear2.R
-    100010: Ear2.R_end
-    100012: FrontFoot.L
-    100014: FrontFoot.L_end
-    100016: FrontFoot.R
-    100018: FrontFoot.R_end
-    100020: FrontHip.L
-    100022: FrontHip.R
-    100024: FrontLeg.L
-    100026: FrontLeg.R
-    100028: FrontShin.L
-    100030: FrontShin.R
-    100032: Head
-    100034: Head_end
-    100036: //RootNode
-    100038: Horse
-    100040: Horse Skeleton
-    100042: Neck1
-    100044: Neck2
-    100046: RearFoot.L
-    100048: RearFoot.L_end
-    100050: RearFoot.R
-    100052: RearFoot.R_end
-    100054: RearHip.L
-    100056: RearHip.R
-    100058: RearKnee.L
-    100060: RearKnee.R
-    100062: RearLeg.L
-    100064: RearLeg.R
-    100066: RearShin.L
-    100068: RearShin.R
-    100070: Spine1
-    100072: Spine2
-    100074: Spine3
-    100076: Spine4
-    100078: Tail 1
-    100080: Tail 2
-    100082: Tail 3
-    100084: Tail 4
-    100086: Tail 5
-    100088: Tail 6
-    100090: Tail 7
-    100092: Tail 8
-    100094: Tail 8_end
-    400000: Ear1.L
-    400002: Ear1.R
-    400004: Ear2.L
-    400006: Ear2.L_end
-    400008: Ear2.R
-    400010: Ear2.R_end
-    400012: FrontFoot.L
-    400014: FrontFoot.L_end
-    400016: FrontFoot.R
-    400018: FrontFoot.R_end
-    400020: FrontHip.L
-    400022: FrontHip.R
-    400024: FrontLeg.L
-    400026: FrontLeg.R
-    400028: FrontShin.L
-    400030: FrontShin.R
-    400032: Head
-    400034: Head_end
-    400036: //RootNode
-    400038: Horse
-    400040: Horse Skeleton
-    400042: Neck1
-    400044: Neck2
-    400046: RearFoot.L
-    400048: RearFoot.L_end
-    400050: RearFoot.R
-    400052: RearFoot.R_end
-    400054: RearHip.L
-    400056: RearHip.R
-    400058: RearKnee.L
-    400060: RearKnee.R
-    400062: RearLeg.L
-    400064: RearLeg.R
-    400066: RearShin.L
-    400068: RearShin.R
-    400070: Spine1
-    400072: Spine2
-    400074: Spine3
-    400076: Spine4
-    400078: Tail 1
-    400080: Tail 2
-    400082: Tail 3
-    400084: Tail 4
-    400086: Tail 5
-    400088: Tail 6
-    400090: Tail 7
-    400092: Tail 8
-    400094: Tail 8_end
-    2100000: Horse Skin
-    2100002: Horse Hair
-    2100004: Horse Hooves
-    2100006: Horse Mouth
-    2100008: Horse Eyes
-    2100010: Horse Nostril
-    2100012: Horse Ears
-    4300000: Horse
-    7400000: Idle
-    7400002: Walk
-    7400004: Trot
-    7400006: Run
-    7400008: Jump
-    7400010: Run Jump
-    7400012: Eat
-    7400014: Eat Loop
-    7400016: Rear Up
-    7400018: Buck
-    7400020: Death
-    9500000: //RootNode
-    13700000: Horse
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ear1.L
+  - first:
+      1: 100002
+    second: Ear1.R
+  - first:
+      1: 100004
+    second: Ear2.L
+  - first:
+      1: 100006
+    second: Ear2.L_end
+  - first:
+      1: 100008
+    second: Ear2.R
+  - first:
+      1: 100010
+    second: Ear2.R_end
+  - first:
+      1: 100012
+    second: FrontFoot.L
+  - first:
+      1: 100014
+    second: FrontFoot.L_end
+  - first:
+      1: 100016
+    second: FrontFoot.R
+  - first:
+      1: 100018
+    second: FrontFoot.R_end
+  - first:
+      1: 100020
+    second: FrontHip.L
+  - first:
+      1: 100022
+    second: FrontHip.R
+  - first:
+      1: 100024
+    second: FrontLeg.L
+  - first:
+      1: 100026
+    second: FrontLeg.R
+  - first:
+      1: 100028
+    second: FrontShin.L
+  - first:
+      1: 100030
+    second: FrontShin.R
+  - first:
+      1: 100032
+    second: Head
+  - first:
+      1: 100034
+    second: Head_end
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: Horse
+  - first:
+      1: 100040
+    second: Horse Skeleton
+  - first:
+      1: 100042
+    second: Neck1
+  - first:
+      1: 100044
+    second: Neck2
+  - first:
+      1: 100046
+    second: RearFoot.L
+  - first:
+      1: 100048
+    second: RearFoot.L_end
+  - first:
+      1: 100050
+    second: RearFoot.R
+  - first:
+      1: 100052
+    second: RearFoot.R_end
+  - first:
+      1: 100054
+    second: RearHip.L
+  - first:
+      1: 100056
+    second: RearHip.R
+  - first:
+      1: 100058
+    second: RearKnee.L
+  - first:
+      1: 100060
+    second: RearKnee.R
+  - first:
+      1: 100062
+    second: RearLeg.L
+  - first:
+      1: 100064
+    second: RearLeg.R
+  - first:
+      1: 100066
+    second: RearShin.L
+  - first:
+      1: 100068
+    second: RearShin.R
+  - first:
+      1: 100070
+    second: Spine1
+  - first:
+      1: 100072
+    second: Spine2
+  - first:
+      1: 100074
+    second: Spine3
+  - first:
+      1: 100076
+    second: Spine4
+  - first:
+      1: 100078
+    second: Tail 1
+  - first:
+      1: 100080
+    second: Tail 2
+  - first:
+      1: 100082
+    second: Tail 3
+  - first:
+      1: 100084
+    second: Tail 4
+  - first:
+      1: 100086
+    second: Tail 5
+  - first:
+      1: 100088
+    second: Tail 6
+  - first:
+      1: 100090
+    second: Tail 7
+  - first:
+      1: 100092
+    second: Tail 8
+  - first:
+      1: 100094
+    second: Tail 8_end
+  - first:
+      4: 400000
+    second: Ear1.L
+  - first:
+      4: 400002
+    second: Ear1.R
+  - first:
+      4: 400004
+    second: Ear2.L
+  - first:
+      4: 400006
+    second: Ear2.L_end
+  - first:
+      4: 400008
+    second: Ear2.R
+  - first:
+      4: 400010
+    second: Ear2.R_end
+  - first:
+      4: 400012
+    second: FrontFoot.L
+  - first:
+      4: 400014
+    second: FrontFoot.L_end
+  - first:
+      4: 400016
+    second: FrontFoot.R
+  - first:
+      4: 400018
+    second: FrontFoot.R_end
+  - first:
+      4: 400020
+    second: FrontHip.L
+  - first:
+      4: 400022
+    second: FrontHip.R
+  - first:
+      4: 400024
+    second: FrontLeg.L
+  - first:
+      4: 400026
+    second: FrontLeg.R
+  - first:
+      4: 400028
+    second: FrontShin.L
+  - first:
+      4: 400030
+    second: FrontShin.R
+  - first:
+      4: 400032
+    second: Head
+  - first:
+      4: 400034
+    second: Head_end
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: Horse
+  - first:
+      4: 400040
+    second: Horse Skeleton
+  - first:
+      4: 400042
+    second: Neck1
+  - first:
+      4: 400044
+    second: Neck2
+  - first:
+      4: 400046
+    second: RearFoot.L
+  - first:
+      4: 400048
+    second: RearFoot.L_end
+  - first:
+      4: 400050
+    second: RearFoot.R
+  - first:
+      4: 400052
+    second: RearFoot.R_end
+  - first:
+      4: 400054
+    second: RearHip.L
+  - first:
+      4: 400056
+    second: RearHip.R
+  - first:
+      4: 400058
+    second: RearKnee.L
+  - first:
+      4: 400060
+    second: RearKnee.R
+  - first:
+      4: 400062
+    second: RearLeg.L
+  - first:
+      4: 400064
+    second: RearLeg.R
+  - first:
+      4: 400066
+    second: RearShin.L
+  - first:
+      4: 400068
+    second: RearShin.R
+  - first:
+      4: 400070
+    second: Spine1
+  - first:
+      4: 400072
+    second: Spine2
+  - first:
+      4: 400074
+    second: Spine3
+  - first:
+      4: 400076
+    second: Spine4
+  - first:
+      4: 400078
+    second: Tail 1
+  - first:
+      4: 400080
+    second: Tail 2
+  - first:
+      4: 400082
+    second: Tail 3
+  - first:
+      4: 400084
+    second: Tail 4
+  - first:
+      4: 400086
+    second: Tail 5
+  - first:
+      4: 400088
+    second: Tail 6
+  - first:
+      4: 400090
+    second: Tail 7
+  - first:
+      4: 400092
+    second: Tail 8
+  - first:
+      4: 400094
+    second: Tail 8_end
+  - first:
+      21: 2100000
+    second: Horse Skin
+  - first:
+      21: 2100002
+    second: Horse Hair
+  - first:
+      21: 2100004
+    second: Horse Hooves
+  - first:
+      21: 2100006
+    second: Horse Mouth
+  - first:
+      21: 2100008
+    second: Horse Eyes
+  - first:
+      21: 2100010
+    second: Horse Nostril
+  - first:
+      21: 2100012
+    second: Horse Ears
+  - first:
+      43: 4300000
+    second: Horse
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      74: 7400002
+    second: Walk
+  - first:
+      74: 7400004
+    second: Trot
+  - first:
+      74: 7400006
+    second: Run
+  - first:
+      74: 7400008
+    second: Jump
+  - first:
+      74: 7400010
+    second: Run Jump
+  - first:
+      74: 7400012
+    second: Eat
+  - first:
+      74: 7400014
+    second: Eat Loop
+  - first:
+      74: 7400016
+    second: Rear Up
+  - first:
+      74: 7400018
+    second: Buck
+  - first:
+      74: 7400020
+    second: Death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Horse
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -157,7 +391,7 @@ ModelImporter:
       name: Horse Skin
     second: {fileID: 2100000, guid: c288d5e07897c724398d749ca71ec2ff, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -166,6 +400,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -186,6 +421,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Idle
       takeName: Idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 75
       wrapMode: 0
@@ -214,6 +450,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Walk
+      internalID: 0
       firstFrame: 0
       lastFrame: 36
       wrapMode: 0
@@ -242,6 +479,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Trot
       takeName: Trot
+      internalID: 0
       firstFrame: 0
       lastFrame: 22
       wrapMode: 0
@@ -270,6 +508,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Run
       takeName: Run
+      internalID: 0
       firstFrame: 0
       lastFrame: 33
       wrapMode: 0
@@ -298,6 +537,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Jump
       takeName: Jump
+      internalID: 0
       firstFrame: 0
       lastFrame: 36
       wrapMode: 0
@@ -326,6 +566,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Run Jump
       takeName: Run Jump
+      internalID: 0
       firstFrame: 0
       lastFrame: 66
       wrapMode: 0
@@ -354,6 +595,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat
       takeName: Eat
+      internalID: 0
       firstFrame: 0
       lastFrame: 25
       wrapMode: 0
@@ -382,6 +624,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Eat Loop
       takeName: Eat Loop
+      internalID: 0
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -410,6 +653,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Rear Up
       takeName: Rear Up
+      internalID: 0
       firstFrame: 0
       lastFrame: 50
       wrapMode: 0
@@ -438,6 +682,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Buck
       takeName: Buck
+      internalID: 0
       firstFrame: 0
       lastFrame: 25
       wrapMode: 0
@@ -466,6 +711,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Death
       takeName: Death
+      internalID: 0
       firstFrame: 0
       lastFrame: 55
       wrapMode: 0
@@ -495,36 +741,49 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
+    tangentImportMode: 2
+    normalCalculationMode: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -534,13 +793,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
