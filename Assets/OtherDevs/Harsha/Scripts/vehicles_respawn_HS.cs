@@ -18,10 +18,14 @@ public class vehicles_respawn_HS : MonoBehaviour
 
     public BezierWalkerWithSpeed spline;
 
+    public bool idle;
 
     private void Start()
     {
-        spline = GetComponentInParent<BezierWalkerWithSpeed>();
+        if(!idle)
+            spline = GetComponentInParent<BezierWalkerWithSpeed>();
+
+       
         respawnvehicles();
     }
 
@@ -46,7 +50,8 @@ public class vehicles_respawn_HS : MonoBehaviour
     public void respawnvehicles()
     {
         prefab_cache = Instantiate(prefab, transform);
-        spline.speed = 1;
+        if(!idle)
+            spline.speed = 1;
         isGone = false;
     }
 

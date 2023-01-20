@@ -12093,7 +12093,7 @@ LightingSettings:
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
   serializedVersion: 4
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 1
   m_RealtimeEnvironmentLighting: 1
@@ -18096,11 +18096,11 @@ PrefabInstance:
     - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 6918466938028367680}
+      objectReference: {fileID: 6918466938028367679}
     - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: spawnPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 6918466938028367679}
+      objectReference: {fileID: 6918466938028367680}
     - target: {fileID: 1555116852160418073, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: spawnPoints.Array.data[2]
       value: 
@@ -40119,23 +40119,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e855d48caa041b4b835cfe00a883155, type: 3}
---- !u!114 &1535923229916170926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4867744718746042988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 158acf032eaebf740bfc2978e5ff97d8, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!114 &1650139700787605009
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -40687,8 +40670,6 @@ GameObject:
   - component: {fileID: 5330509253371036496}
   - component: {fileID: 6684473696053235744}
   - component: {fileID: 3240540453943373278}
-  - component: {fileID: 6456907359203125702}
-  - component: {fileID: 1535923229916170926}
   m_Layer: 13
   m_Name: Camera
   m_TagString: MainCamera
@@ -40746,6 +40727,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 903060849315886508, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270334088632346698, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538588841619227244, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217561223974556584, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5875675019916658500, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -40795,6 +40792,10 @@ PrefabInstance:
       value: ------Aditya------
       objectReference: {fileID: 0}
     - target: {fileID: 5875675019916658501, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360507559840757087, guid: e301cffad07268542ac1e074b3100ae2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -40969,66 +40970,6 @@ Transform:
   m_Father: {fileID: 2230695407670848707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6456907359203125702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4867744718746042988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 190321764530770092}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 8192
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!81 &6684473696053235744
 AudioListener:
   m_ObjectHideFlags: 0
@@ -41310,6 +41251,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5280099826897298481, guid: f4a0f0e75ae1fa74e96c73e553b7fe2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280099826897298495, guid: f4a0f0e75ae1fa74e96c73e553b7fe2a, type: 3}
+      propertyPath: idle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280099827449737664, guid: f4a0f0e75ae1fa74e96c73e553b7fe2a, type: 3}
+      propertyPath: idle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280099827449737666, guid: f4a0f0e75ae1fa74e96c73e553b7fe2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a0f0e75ae1fa74e96c73e553b7fe2a, type: 3}
 --- !u!114 &8842607933470474594
@@ -41424,6 +41381,10 @@ PrefabInstance:
     - target: {fileID: 7744332534323929635, guid: cae8ef797f8b7a14fa81f2ce7aa7deba, type: 3}
       propertyPath: m_Name
       value: ------Hrithik------
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744332535172556830, guid: cae8ef797f8b7a14fa81f2ce7aa7deba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cae8ef797f8b7a14fa81f2ce7aa7deba, type: 3}

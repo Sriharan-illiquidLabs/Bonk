@@ -253,7 +253,7 @@ public class Cheems : MonoBehaviour
        
        
 
-        UpdateCoins(baseCoinValue);
+        UpdateCoins(50);
     }
 
     IEnumerator UpdateMultiplier()
@@ -276,7 +276,7 @@ public class Cheems : MonoBehaviour
 
         if (coinValue >= 100000)
         {
-            GameOverCondition.Instance.GameOver();
+            GameOverCondition_AR.Instance.GameOver();
         }
     }
 
@@ -312,7 +312,7 @@ public class Cheems : MonoBehaviour
                 mg = 400f;
                 break;
             case State.bonk:
-                IsBonking = true;
+                LeanTween.delayedCall(0.8f, Now);
                 anim.SetTrigger("bonk");
                 playerSpeed = 0f;
                 mg = 400f;
@@ -322,5 +322,12 @@ public class Cheems : MonoBehaviour
         }
         currentState = newState;
     }
+
+    void Now()
+    {
+        IsBonking = true;
+
+    }
+
 
 }
