@@ -8,11 +8,11 @@ public class ButtonTexting_AR : MonoBehaviour
 {
     #region Temp
     //Remove on deployment.
-    public bool ChangeText;
-    private void OnValidate()
-    {
-        GetComponentInChildren<TextMeshProUGUI>().text = gameObject.name;
-    }
+    //public bool ChangeText;
+    //private void OnValidate()
+    //{
+    //    GetComponentInChildren<TextMeshProUGUI>().text = gameObject.name;
+    //}
 
     #endregion
 

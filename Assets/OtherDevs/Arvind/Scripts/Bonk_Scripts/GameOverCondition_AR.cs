@@ -34,11 +34,11 @@ public class GameOverCondition_AR : MonoBehaviour
         InvokeRepeating(nameof(UpdateTimer), 1f, 1f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    //// Update is called once per frame
+    //void Update()
+    //{
         
-    }
+    //}
 
     void UpdateTimer()
     {

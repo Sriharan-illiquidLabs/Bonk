@@ -11,7 +11,7 @@ public class StillIdleRespawn : MonoBehaviour
 
     private GameObject car_cache;
     private ObjectKnockOut_AR objectKnock;
-    private Wheels_Coins[] wheelStop;
+    private Wheels_Coins_AR[] wheelStop;
     //private Transform transform_cache;
     private bool isDestroyed = false;
     private void Start()
@@ -25,7 +25,7 @@ public class StillIdleRespawn : MonoBehaviour
         {
             isDestroyed = true;
 
-            Destroy(car_cache,timeToRespawn-1);
+            Destroy(car_cache, timeToRespawn - 1);
             Invoke("CreateCar", timeToRespawn);
         }
         //else if (!isDestroyed)
@@ -36,27 +36,28 @@ public class StillIdleRespawn : MonoBehaviour
         //}
         //Debug.Log("Hit: " + objectKnock.isHit + " Blast: " + objectKnock.isBlasted);
     }
-    private void Respawn()
-    {
-        CreateCar();
-        
+    //private void Respawn()
+    //{
+    //    CreateCar();
 
-    }
+
+    //}
     private void CreateCar()
     {
         car_cache = Instantiate(car, transform);
         objectKnock = car_cache.GetComponent<ObjectKnockOut_AR>();
 
-        wheelStop = car_cache.GetComponentsInChildren<Wheels_Coins>();
+        wheelStop = car_cache.GetComponentsInChildren<Wheels_Coins_AR>();
         for (int i = 0; i < wheelStop.Length; i++)
         {
-            wheelStop[i].GetComponent<Wheels_Coins>().rotationSpeed = 0;
+            wheelStop[i].enabled = false;
         }
+        //objectKnock.StopWheels();
 
         if (car_cache.GetComponent<AudioSource>() != null)
         {
             car_cache.GetComponent<AudioSource>().Stop();
-            car_cache.GetComponent<AudioSource>().enabled=false;
+            car_cache.GetComponent<AudioSource>().enabled = false;
         }
 
         isDestroyed = false;

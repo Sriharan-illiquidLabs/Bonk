@@ -18045,6 +18045,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1018240887, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532780798, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 712578114680407634, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
       propertyPath: m_Name
       value: ------Arvind------
@@ -18121,7 +18129,9 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[4]
       value: 
       objectReference: {fileID: 6918466938028367676}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1018240887, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
+    - {fileID: 1532780798, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b3384e15b81c334d9c56eca14c2786e, type: 3}
 --- !u!1 &1018600653
 GameObject:

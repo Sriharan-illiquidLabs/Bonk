@@ -12,10 +12,10 @@ public class Car_Detect_AR : MonoBehaviour
     float carSpeed;
     BoxCollider boxCollider;
 
-    private void OnValidate()
-    {
-        boxCollider = GetComponent<BoxCollider>();
-    }
+    //private void OnValidate()
+    //{
+    //    boxCollider = GetComponent<BoxCollider>();
+    //}
     private void Start()
     {
           
@@ -24,18 +24,18 @@ public class Car_Detect_AR : MonoBehaviour
         carSpeed = bezierWalker.speed;
         boxCollider.isTrigger = true;
     }
-    private void Update()
-    {
-        //carsAndPlayer = Physics.OverlapBox(boxCollider.center + transform.position, boxCollider.size/2, transform.rotation, mask);
-        //if(carsAndPlayer.Length > 0 )
-        //{
-        //    bezierWalker.speed = 0.0000001f;
-        //}
-        //else if (bezierWalker.speed < carSpeed)
-        //{
-        //    bezierWalker.speed = carSpeed;
-        //}
-    }
+    //private void Update()
+    //{
+    //    //carsAndPlayer = Physics.OverlapBox(boxCollider.center + transform.position, boxCollider.size/2, transform.rotation, mask);
+    //    //if(carsAndPlayer.Length > 0 )
+    //    //{
+    //    //    bezierWalker.speed = 0.0000001f;
+    //    //}
+    //    //else if (bezierWalker.speed < carSpeed)
+    //    //{
+    //    //    bezierWalker.speed = carSpeed;
+    //    //}
+    //}
   
 
     private void OnTriggerStay(Collider other)
