@@ -39,7 +39,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1469500762427101469
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56,7 +56,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!54 &4268683580626558410
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4072769b37411fe4988c3d628a4d6c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Male_Blood_HK: {fileID: 5351699774009671232, guid: d122e79d34788f949abb266dcf32b75c, type: 3}
+  Female_Blood_HK: {fileID: 5351699774009671232, guid: 8bc389a77c084104eb2e351378774f8c, type: 3}
   isGoathit: 0
   DefaultStaringPoint: 0
   thisSpline: {fileID: 0}

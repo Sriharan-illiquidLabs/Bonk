@@ -14,7 +14,7 @@ public class Cheems : MonoBehaviour
 
 
     public int coinValue = 0;
-    private int baseCoinValue = 100;
+    private int baseCoinValue = 300;
     private int multiplier = 1;
     public TMP_Text coinCount;
     public TMP_Text multiplierText;
@@ -42,7 +42,7 @@ public class Cheems : MonoBehaviour
 
     bool jump;
     bool bonk;
-    public bool IsBonking { get { return bonk; } }
+    public bool IsBonking;
 
     State currentState = State.Idle;
 
@@ -168,7 +168,7 @@ public class Cheems : MonoBehaviour
     void Idle()
     {
         //Bat.tag = "Untagged";
-
+        IsBonking = false;
         bonk = false;
     }
 
@@ -274,7 +274,7 @@ public class Cheems : MonoBehaviour
         coinValue += _value * multiplier;
         coinCount.text = coinValue.ToString();
 
-        if (coinValue >= 25000)
+        if (coinValue >= 100000)
         {
             GameOverCondition.Instance.GameOver();
         }
@@ -312,6 +312,7 @@ public class Cheems : MonoBehaviour
                 mg = 400f;
                 break;
             case State.bonk:
+                IsBonking = true;
                 anim.SetTrigger("bonk");
                 playerSpeed = 0f;
                 mg = 400f;

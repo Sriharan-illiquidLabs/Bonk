@@ -464,7 +464,6 @@ GameObject:
   - component: {fileID: 7666849226879550503}
   - component: {fileID: 5497815104831250131}
   - component: {fileID: 6200169225646306470}
-  - component: {fileID: 6200169225697045931}
   - component: {fileID: -3020730250832846648}
   - component: {fileID: 6200169226406341890}
   - component: {fileID: 6713790124928582891}
@@ -560,27 +559,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!114 &6200169225697045931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9200361780143930428}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148310ac13c958d4c93f53cdfe985375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spline: {fileID: 4056239746767197580, guid: 5dc7cba0f1d5d364ea913eed461e6cf2, type: 3}
-  travelMode: 1
-  speed: 1
-  m_normalizedT: 0.7
-  rotationLerpModifier: 5
-  lookAt: 1
-  onPathCompleted:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &-3020730250832846648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d8a22d22266a84bb0af050549abac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vechscript: {fileID: 0}
   isThisCar: 1
   burnTimeDivisor: 2
   carMaterials: []

@@ -2069,6 +2069,7 @@ GameObject:
   - component: {fileID: 6804202400487317215}
   - component: {fileID: 6804202400487317208}
   - component: {fileID: 6804202400487317209}
+  - component: {fileID: 7320479453310639860}
   m_Layer: 14
   m_Name: MaleClone1
   m_TagString: Untagged
@@ -2143,6 +2144,25 @@ CapsuleCollider:
   m_Height: 0.018
   m_Direction: 1
   m_Center: {x: -0.00016865201, y: 0.009358442, z: 0}
+--- !u!114 &7320479453310639860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804202400487317189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4072769b37411fe4988c3d628a4d6c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Male_Blood_HK: {fileID: 5351699774009671232, guid: d122e79d34788f949abb266dcf32b75c, type: 3}
+  Female_Blood_HK: {fileID: 5351699774009671232, guid: 8bc389a77c084104eb2e351378774f8c, type: 3}
+  isGoathit: 0
+  DefaultStaringPoint: 0
+  thisSpline: {fileID: 0}
+  thisSpeed: 0
+  pos: {x: 0, y: 0, z: 0}
 --- !u!1 &6804202400519370274
 GameObject:
   m_ObjectHideFlags: 0
