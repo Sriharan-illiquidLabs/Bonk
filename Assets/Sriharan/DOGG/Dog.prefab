@@ -5104,11 +5104,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2526258, y: 1.9206092, z: 1.3069742}
+  m_Size: {x: 1.2526258, y: 1.85, z: 1.3069742}
   m_Center: {x: 0.046978634, y: 0.960592, z: -0.10171362}
 --- !u!95 &1359161189927913941
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5125,7 +5125,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1930663247585566650
 MonoBehaviour:
   m_ObjectHideFlags: 0
